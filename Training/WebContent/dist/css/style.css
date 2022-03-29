@@ -1,0 +1,312 @@
+/* SECTION INTRO */
+#intro {
+	background-color: black;
+}
+
+/* media query per il titolo 'trainingBO grande diventa piccolo' */
+/*il titolo è gigante per schermi > di 1023*/
+@media ( min-width : 1023px) {
+	#titoloPrincipale {
+		font-size: 50px;
+		line-height: 80px;
+		text-transform: uppercase;
+		text-shadow: 10px 10px 0 rgba(255, 255, 255, 0.07);
+	}
+	#titoloPrincipale:first-child {
+		font-size: 160px;
+	}
+	#titoloPrincipale:first-child {
+		font-size: 160px;
+		margin: 20px 20px 0 0;
+		line-height: 0.8;;
+		text-shadow: 4px 4px 0 #566074, 7px 7px 0 #fff;
+	}
+	#sottotilo{
+		display: none !important;
+		}
+}
+
+
+/* medai query per mettere o meno l immagine clikkabile */
+/*l immagine non viene visualizzata per schermi minori di 1023*/
+@media ( max-width : 1023px) {
+	.schermoGrande {
+		display: none !important;
+	}
+}
+
+/* medai query per mettere o meno il dropdown */
+/*/*il dropdown non viene visualizzata per schermi maggiori di 1023*/
+
+@media ( min-width : 1023px) {
+	.schermoPiccolo {	
+		display: none !important;
+		padding-top: 80px;
+		
+	}
+}
+@media ( max-width : 1023px) {
+	.center{
+		
+		overflow-x: auto;
+	}
+	
+}
+
+@media ( max-width : 1023px) {
+.left{
+	display: none;}
+}
+@media ( max-width : 1023px) {
+	.right{
+	display:none;}
+}
+	
+
+/* SECTION IMAGE MAP- */
+area {
+	outline: none;
+	cursor: pointer;
+}
+
+#imageBO{
+	width:650px;
+	height:auto;
+	
+}
+/*********************tabella *********************/
+th{
+	padding-left: 100px;
+	padding-bottom: 20px;
+}
+
+
+
+
+/***************************************************** ICONE***********************/
+.main {
+    position: relative
+}
+.input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+/****BASKET****/
+
+
+#bask > div {
+    width: 50px;
+    height: 50px;
+    background-image:url('../icons/unchecked/basketU.png');
+    background-repeat: no-repeat;
+}
+
+#basket:checked + div {
+    background-image:url('../icons/checked/basketball.png');
+     background-repeat: no-repeat;
+}
+
+/******BOXE**********/
+#boxe > div {
+    width: 50px;
+    height: 50px;
+    background-image:url('../icons/unchecked/boxeU.png');
+    background-repeat: no-repeat;
+}
+
+#box:checked + div {
+    background-image:url('../icons/checked/boxing.png');
+     background-repeat: no-repeat;
+}
+
+/******NUOTO**********/
+#nuoto > div {
+    width: 50px;
+    height: 50px;
+    background-image:url('../icons/unchecked/swimmingU.png');
+    background-repeat: no-repeat;
+}
+
+#nuot:checked + div {
+    background-image:url('../icons/checked/nuoto.png');
+     background-repeat: no-repeat;
+     
+}
+
+/******CALCIO**********/
+#calcio > div {
+    width: 50px;
+    height: 50px;
+    background-image:url('../icons/unchecked/calcioU.png');
+    background-repeat: no-repeat;
+}
+
+#socc:checked + div {
+    background-image:url('../icons/checked/calcio.png');
+     background-repeat: no-repeat;
+}
+
+/******YOGA**********/
+#yoga > div {
+    width: 50px;
+    height: 50px;
+    background-image:url('../icons/unchecked/yogaU.png');
+    background-repeat: no-repeat;
+}
+
+#yog:checked + div {
+    background-image:url('../icons/checked/yoga.png');
+     background-repeat: no-repeat;
+}
+/******ROLLER**********/
+#roller > div {
+    width: 50px;
+    height: 50px;
+    background-image:url('../icons/unchecked/rollerU.png');
+    background-repeat: no-repeat;
+}
+
+#roll:checked + div {
+    background-image:url('../icons/checked/roller.png');
+     background-repeat: no-repeat;
+}
+
+/******PALESTRA**********/
+#palestra > div {
+    width: 50px;
+    height: 50px;
+    background-image:url('../icons/unchecked/palestraU.png');
+    background-repeat: no-repeat;
+}
+
+#pale:checked + div {
+    background-image:url('../icons/checked/palestra.png');
+     background-repeat: no-repeat;
+}
+
+/******RUGBY**********/
+#rugby > div {
+    width: 50px;
+    height: 50px;
+    background-image:url('../icons/unchecked/rugbyU.png');
+    background-repeat: no-repeat;
+}
+
+#rug:checked + div {
+    background-image:url('../icons/checked/rugby.png');
+     background-repeat: no-repeat;
+}
+
+/******SKATE**********/
+#skateboard > div {
+    width: 50px;
+    height: 50px;
+    background-image:url('../icons/unchecked/skateU.png');
+    background-repeat: no-repeat;
+}
+
+#skate:checked + div {
+    background-image:url('../icons/checked/skateboard.png');
+     background-repeat: no-repeat;
+}
+
+/******VOLLEY**********/
+#volley > div {
+    width: 50px;
+    height: 50px;
+    background-image:url('../icons/unchecked/volleyballU.png');
+    background-repeat: no-repeat;
+}
+
+#voll:checked + div {
+    background-image:url('../icons/checked/volleyball.png');
+     background-repeat: no-repeat;
+}
+
+/******DANZA**********/
+#danza > div {
+    width: 50px;
+    height: 50px;
+    background-image:url('../icons/unchecked/danzaU.png');
+    background-repeat: no-repeat;
+}
+
+#danz:checked + div {
+    background-image:url('../icons/checked/ballet.png');
+     background-repeat: no-repeat;
+}
+
+/******TENNIS**********/
+#tennis > div {
+    width: 50px;
+    height: 50px;
+    background-image:url('../icons/unchecked/tennisU.png');
+    background-repeat: no-repeat;
+}
+
+#tenn:checked + div {
+    background-image:url('../icons/checked/tennis.png');
+     background-repeat: no-repeat;
+}
+/******OLImPIADI**********/
+#olimpiadi > div {
+    width: 50px;
+    height: 50px;
+    background-image:url('../icons/unchecked/olimpU.png');
+    background-repeat: no-repeat;
+}
+
+#olimp:checked + div {
+    background-image:url('../icons/checked/olimpiadi.png');
+     background-repeat: no-repeat;
+}
+
+/*********TABELLA ***************/
+
+#resultTable {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#resultTable td, #resultTable th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#resultTable tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/***CAROUSEL MANUALE****/
+.left{
+ float: left; 
+
+}
+
+.internal{
+ width: 15%;
+ height: 100%;
+ display: inline-block;
+}
+
+.center{
+ float: left; 
+
+ 
+ overflow: hidden;
+ /*will change this to hidden later to deny scolling to user*/
+ white-space: nowrap;
+}
+
+.right{
+ float: right; 
+
+
+}

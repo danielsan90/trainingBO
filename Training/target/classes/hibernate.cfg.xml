@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        
+        <!-- connection details -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/trainingBO</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">root</property>
+        <!-- @see: http://community.jboss.org/wiki/HibernateCoreMigrationGuide36 -->
+        <property name="hibernate.jdbc.use_streams_for_binary">false</property>
+        
+        <!-- mappings for annotated classes -->
+        <mapping class="model.Attivita"/>
+        <mapping class="model.Zona"/>
+        <mapping class="model.User"/>
+        <mapping class="model.UserRoles"/>
+        
+    </session-factory>
+</hibernate-configuration>
